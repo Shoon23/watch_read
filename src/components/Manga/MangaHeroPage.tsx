@@ -13,7 +13,7 @@ function MangaHeroPage({ manga }: Props) {
   return (
     <section className="hero min-h-screen">
       <div className="hero-content p-0 mt-2 flex-col lg:flex-row">
-        <Image
+        <img
           alt=""
           width={380}
           height={547}

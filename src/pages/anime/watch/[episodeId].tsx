@@ -42,12 +42,11 @@ function WatchAnime({ episodeServers, episodeList, currentEpisode }: Props) {
         <iframe
           src={episodeServers[serverIdx].url}
           allowFullScreen={true}
-          height={"578"}
-          width={"80%"}
+          className="h-[260px]  w-[400px]  md:h-[310px] md:w-[80%] lg:h-[578px]"
           allow=" picture-in-picture fullscreen"
         ></iframe>
 
-        <div className="flex gap-1">
+        <div className="flex flex-col md:flex-row gap-1">
           {episodeServers.map((item, idx: number) => (
             <button
               onClick={() => setServerIdx(idx)}
