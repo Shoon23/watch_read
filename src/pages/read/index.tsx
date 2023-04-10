@@ -43,8 +43,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     `https://api.mangadex.org/manga?limit=20&offset=${offset}&includes[]=cover_art`
   );
 
-  console.log(res.data.data[0].attributes);
-
   return {
     props: {
       manga: res.data.data,
